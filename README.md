@@ -1,5 +1,5 @@
 # Unity Scripting Tutorials
-_Implementations of select Unity Scripting Tutorials_
+_Implementations of select Unity Scripting Tutorials, complete with basic Scenes_
 
 [Unity Scripting Tutorials (Videos)](https://unity3d.com/learn/tutorials/topics/scripting)
 
