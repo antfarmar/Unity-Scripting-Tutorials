@@ -1,14 +1,14 @@
-# Unity-Scripting-Tutorials
-Implementations of select Unity Scripting Tutorials
+# Unity Scripting Tutorials
+_Implementations of select Unity Scripting Tutorials_
 
-[Unity Scripting Video Tutorials](https://unity3d.com/learn/tutorials/topics/scripting)
+[Unity Scripting Tutorials (Videos)](https://unity3d.com/learn/tutorials/topics/scripting)
 
 # Contents
 
 [INTERMEDIATE GAMEPLAY SCRIPTING](#intermediate-gameplay-scripting)
 
-16. [Delegates](#16-delegates)
-18. [Events](#18-events)
+- 16. [Delegates](#16-delegates)
+- 18. [Events](#18-events)
 
 
 ## INTERMEDIATE GAMEPLAY SCRIPTING
