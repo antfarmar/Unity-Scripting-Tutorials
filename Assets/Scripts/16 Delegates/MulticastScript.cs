@@ -1,27 +1,35 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class MulticastScript : MonoBehaviour
 {
-    delegate void MultiDelegate();
-    MultiDelegate myMultiDelegate;
+    delegate void MultiDelegate();      // delegate template/signature
+    MultiDelegate myMultiDelegate;      // member variable of type MultiDelegate
 
 
     void Start()
     {
-        myMultiDelegate += PowerUp;
-        myMultiDelegate += TurnRed;
+        myMultiDelegate += PowerUp;     // assign PowerUp method to the delegate
+        myMultiDelegate += TurnRed;     // assign TurnRed method to the same delegate
 
-        if(myMultiDelegate != null)
+        if(myMultiDelegate != null)     // avoid errors by checking for unassigned delegate
         {
-            myMultiDelegate();
+            myMultiDelegate();          // call the multi-delegate
         }
+
+        myMultiDelegate -= PowerUp;     // unassign PowerUp method from delegate
+        myMultiDelegate -= TurnRed;     // unassign TurnRed method from delegate
     }
+
+
+    // Methods with the SAME SIGNATURE as the delegate MyMultiDelegate
 
     void PowerUp()
     {
         print("Orb is powering up!");
     }
+
 
     void TurnRed()
     {
