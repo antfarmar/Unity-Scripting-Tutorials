@@ -5,9 +5,13 @@ Implementations of select Unity Scripting Tutorials
 
 # Contents
 
+[INTERMEDIATE GAMEPLAY SCRIPTING](#intermediate-gameplay-scripting)
+
+16. [Delegates](#16-delegates)
+18. [Events](#18-events)
+
+
 ## INTERMEDIATE GAMEPLAY SCRIPTING
-
-
 
 #### 16. Delegates
 
