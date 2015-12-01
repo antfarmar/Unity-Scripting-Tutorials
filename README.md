@@ -25,12 +25,14 @@ How to create and use delegates to provide complex and dynamic functionality in 
 * Delegates can be passed around or used like a variable.
 * Delegates can have values assigned to them and be changed at runtime.
 * Delegates contain functions, just as variables contain data.
+* Delegates also have the ability to be ***Multicast:***
+	* use a single delegate variable to represent multiple methods at the same time.
 
 
 
 #### 18. Events
 
-How to create a dynamic "broadcast" system using Delegate Events.
+How to create a dynamic "broadcast"/"messaging" system using C# Publisher/Subscriber Delegate Events.
 
 [Unity](https://unity3d.com/learn/tutorials/modules/intermediate/scripting/events?playlist=17117) / 
 [Youtube](https://www.youtube.com/watch?v=6qyR73EO68w)
