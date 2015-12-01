@@ -7,12 +7,33 @@ _Implementations of select Unity Scripting Tutorials_
 
 [INTERMEDIATE GAMEPLAY SCRIPTING](#intermediate-gameplay-scripting)
 
+- 11. [Extension Methods](#11-extension-methods)
 - 14. [Coroutines](#14-coroutines)
 - 16. [Delegates](#16-delegates)
 - 18. [Events](#18-events)
 
 
 ## INTERMEDIATE GAMEPLAY SCRIPTING
+
+
+#### 11. Extension Methods
+
+How to create, implement, and call an extension method.
+
+[Unity](https://unity3d.com/learn/tutorials/modules/intermediate/scripting/extension-methods?playlist=17117) / 
+[Youtube](https://www.youtube.com/watch?v=v2ONQAqqLDc)
+
+##### Notes:
+* Extension Methods are a way of adding functionality to a type:
+	* without having to create a derived type.
+	* without changing the original type.
+* Perfect for occasions when you cannot edit the original type's source. (e.g. Components)
+* Extension methods must be placed in a non-generic `static` class.
+* Extension methods are used liked instance methods, but they too are `static`.
+* Use of the `this` keyword in the parameters makes the static method an extension method.
+  * The variable following `this` denotes which class the method becomes an extension of.
+  * e.g. `public static void ResetTransformation(this Transform trans)`
+
 
 
 #### 14. Coroutines
