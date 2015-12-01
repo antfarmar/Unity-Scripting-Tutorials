@@ -12,6 +12,10 @@ _Implementations of select Unity Scripting Tutorials_
 - 16. [Delegates](#16-delegates)
 - 18. [Events](#18-events)
 
+[EDITOR SCRIPTING](#editor-scripting)
+
+- 01. [Building A Custom Inspector](#01-building-a-custom-inspector)
+
 
 ## INTERMEDIATE GAMEPLAY SCRIPTING
 
@@ -79,3 +83,22 @@ How to create a dynamic "broadcast"/"messaging" system using C# Publisher/Subscr
 * Events are used instead of delegates because they have inherent security.
 	* Events only allow other classes to Subscribe/Unsubscribe.
 	* Events also prevent overriding. 
+
+
+
+## EDITOR SCRIPTING
+
+
+#### 01. Building A Custom Inspector
+
+Custom inspectors allow you to add a lot of power and flexibility to your workflow.
+In this video you will learn about the benefits of custom inspectors as well as how to build them.
+
+[Unity](https://unity3d.com/learn/tutorials/modules/intermediate/editor/building-custom-inspector?playlist=17117) / 
+[Youtube](https://www.youtube.com/watch?v=GDSw2CB2Zk0)
+
+##### Notes:
+* Unity requires that you place custom editor scripts in an "Editor" folder.
+* Scripts must import `using UnityEditor;` namespace.
+* Class definition must have attribute `[CustomEditor(typeof(YourScript))]`.
+* Scripts must implement `public override void OnInspectorGUI()` which is called everytime the Inspector is drawn.
