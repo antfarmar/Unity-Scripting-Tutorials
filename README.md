@@ -7,12 +7,21 @@ Implementations of select Unity Scripting Tutorials
 
 ## INTERMEDIATE GAMEPLAY SCRIPTING
 
+
+
 #### 16. Delegates
 
 How to create and use delegates to provide complex and dynamic functionality in your scripts.
 
 [Unity](https://unity3d.com/learn/tutorials/modules/intermediate/scripting/delegates?playlist=17117) / 
 [Youtube](https://www.youtube.com/watch?v=RSN-A0NZTO0)
+
+##### Notes:
+* Delegates can be thought of simply as containers for/pointers to functions.
+* Delegates can be passed around or used like a variable.
+* Delegates can have values assigned to them and be changed at runtime.
+* Delegates contain functions, just as variables contain data.
+
 
 
 #### 18. Events

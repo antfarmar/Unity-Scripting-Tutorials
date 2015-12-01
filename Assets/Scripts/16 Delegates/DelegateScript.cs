@@ -2,6 +2,12 @@
 using System.Collections;
 
 
+/*
+* Delegates can be thought of simply as containers for/pointers to functions.
+* Delegates can be passed around or used like a variable.
+* Delegates can have values assigned to them and be changed at runtime.
+* Delegates contain functions, just as variables contain data.
+*/
 public class DelegateScript : MonoBehaviour
 {
 
