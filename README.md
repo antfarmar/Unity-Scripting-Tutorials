@@ -7,11 +7,25 @@ _Implementations of select Unity Scripting Tutorials_
 
 [INTERMEDIATE GAMEPLAY SCRIPTING](#intermediate-gameplay-scripting)
 
+- 14. [Coroutines](#14-coroutines)
 - 16. [Delegates](#16-delegates)
 - 18. [Events](#18-events)
 
 
 ## INTERMEDIATE GAMEPLAY SCRIPTING
+
+
+#### 14. Coroutines
+
+How to create coroutines and use them to achieve complex behaviors.
+
+[Unity](https://unity3d.com/learn/tutorials/modules/intermediate/scripting/coroutines?playlist=17117) / 
+[Youtube](https://www.youtube.com/watch?v=bM3CXzj5xM4)
+
+##### Notes:
+* Coroutines are functions that execute in intervals.
+
+
 
 #### 16. Delegates
 
