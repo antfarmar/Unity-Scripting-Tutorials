@@ -10,6 +10,7 @@ _Implementations of select Unity Scripting Tutorials, complete with basic Scenes
 - 11. [Extension Methods](#11-extension-methods)
 - 14. [Coroutines](#14-coroutines)
 - 16. [Delegates](#16-delegates)
+- 17. [Attributes](#17-attributes)
 - 18. [Events](#18-events)
 
 [EDITOR SCRIPTING](#editor-scripting)
@@ -55,6 +56,7 @@ How to create coroutines and use them to achieve complex behaviors.
 
 
 
+
 #### 16. Delegates
 
 How to create and use delegates to provide complex and dynamic functionality in your scripts.
@@ -69,6 +71,22 @@ How to create and use delegates to provide complex and dynamic functionality in 
 * Delegates contain functions, just as variables contain data.
 * Delegates also have the ability to be ***Multicast:***
 	* use a single delegate variable to represent multiple methods at the same time.
+
+
+
+
+#### 17. Attributes
+
+Attributes allow you to attach additional behavior to the methods and variables you create.
+In this video you will learn the format of attributes as well as how to use the `[Range(min, max)]` and `[ExecuteInEditMode]` attributes.
+
+[Unity](https://unity3d.com/learn/tutorials/modules/intermediate/scripting/attributes?playlist=17117) / 
+[Youtube](https://www.youtube.com/watch?v=WG_zoE5sZE4)
+
+##### Notes:
+* [RangeAttribute](http://docs.unity3d.com/ScriptReference/RangeAttribute.html)
+* [ExecuteInEditMode](http://docs.unity3d.com/ScriptReference/ExecuteInEditMode.html)
+
 
 
 
