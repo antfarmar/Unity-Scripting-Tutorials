@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
+using UnityEngine.Events;
 
 public class SphereBehaviours : MonoBehaviour
 {
@@ -45,6 +47,12 @@ public class SphereBehaviours : MonoBehaviour
         ColorHealth.r = 1 - Health / 10f;
         ColorHealth.g = Health / 10f;
         GetComponent<Renderer>().sharedMaterial.color = ColorHealth;
+    }
+
+
+    public void RandomPosition()
+    {
+        transform.position = UnityEngine.Random.insideUnitCircle;
     }
 
 }
