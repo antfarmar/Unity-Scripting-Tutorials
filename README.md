@@ -189,7 +189,7 @@ UnityEvents are a way of allowing user driven callback to be persisted from edit
 
 * By default a `UnityEvent` in a `MonoBehaviour` binds dynamically to a `void` function.
 * Dynamic invocation of UnityEvents supports binding to functions with up to 4 arguments.
-* To do this you need to define a custom UnityEvent class that supports multiple arguments.
+* To do this you need to define a custom `UnityEvent` class that supports multiple arguments.
 * This is quite easy to do:
 ```csharp
 [Serializable]
