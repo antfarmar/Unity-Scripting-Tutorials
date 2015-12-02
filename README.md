@@ -183,3 +183,18 @@ UnityEvents are a way of allowing user driven callback to be persisted from edit
 	* Decoupling systems
 	* Persistent callbacks
 	* Preconfigured call events
+
+
+#### Generic UnityEvents
+
+* By default a UnityEvent in a Monobehaviour binds dynamically to a void function.
+* Dynamic invocation of UnityEvents supports binding to functions with up to 4 arguments.
+* To do this you need to define a custom UnityEvent class that supports multiple arguments.
+* This is quite easy to do:
+```csharp
+[Serializable]
+public class StringEvent : UnityEvent <string> {}
+```
+* By adding an instance of this to your class instead of the base UnityEvent it will allow the callback to bind dynamically to string functions.
+* This can then be invoked by calling the Invoke() function with a string as argument.
+* UnityEvents can be defined with up to 4 arguments in their generic definition.

@@ -51,6 +51,15 @@ public class SphereBehaviours : MonoBehaviour
     public void RandomPosition()
     {
         transform.position = UnityEngine.Random.insideUnitCircle;
+        gameObject.name = "MOVED";
+    }
+
+
+    public void SetHealth(int value)
+    {
+        Health = value;
+        DrawHealth();
+        gameObject.name = "HEALTH SET EVENT: " + value.ToString();
     }
 
 }
