@@ -3,7 +3,10 @@ _Implementations of select Unity Scripting Tutorials, complete with basic Scenes
 
 [Unity Scripting Tutorials (Videos)](https://unity3d.com/learn/tutorials/topics/scripting)
 
+
+
 # Contents
+
 
 [INTERMEDIATE GAMEPLAY SCRIPTING](#intermediate-gameplay-scripting)
 
@@ -13,11 +16,17 @@ _Implementations of select Unity Scripting Tutorials, complete with basic Scenes
 - 17. [Attributes](#17-attributes)
 - 18. [Events](#18-events)
 
+
 [EDITOR SCRIPTING](#editor-scripting)
 
 - 01. [Building A Custom Inspector](#01-building-a-custom-inspector)
 - 02. [The DrawDefaultInspector Function](#02-the-drawdefaultinspector-function)
 - 03. [Adding Buttons To A Custom Inspector](#03-adding-buttons-to-a-custom-inspector)
+
+
+[OTHER SCRIPTING](#other-scripting)
+
+- 01. [UnityEvent](#01-unityevent)
 
 
 
@@ -150,3 +159,27 @@ In this video you will learn how to create buttons in a custom inspector and how
 
 ##### Notes:
 * Useful for improving workflow by automating tedious tasks with a single click of a button.
+
+
+
+## OTHER SCRIPTING
+
+
+#### 01. UnityEvent
+
+UnityEvents are a way of allowing user driven callback to be persisted from edit time to run time without the need for additional programming and script configuration.
+
+[Unity Manual Entry](http://docs.unity3d.com/Manual/UnityEvents.html) / 
+[Scripting API Entry for `UnityEvent`](http://docs.unity3d.com/ScriptReference/Events.UnityEvent.html)
+
+##### Notes:
+* UnityEvents are a way to hook up function calls between GameObjects in the editor and serialize those calls.
+* UnityEvents can be edited in the Inspector, serialized, and be given default values.
+* The `UnityEvent` class within `UnityEngine.Events` is the way of exposing callbacks on an object in a way that can be modified through the editor.
+* UnityEvents can also do what C# `delegate events` do:
+	* Be populated with function calls at run-time via `UnityEvent.AddListener()`.
+* UnityEvents are useful for a number of things:
+	* Content driven callbacks
+	* Decoupling systems
+	* Persistent callbacks
+	* Preconfigured call events
