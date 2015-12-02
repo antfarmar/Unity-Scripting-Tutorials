@@ -15,6 +15,9 @@ _Implementations of select Unity Scripting Tutorials, complete with basic Scenes
 [EDITOR SCRIPTING](#editor-scripting)
 
 - 01. [Building A Custom Inspector](#01-building-a-custom-inspector)
+- 02. [The DrawDefaultInspector Function](#02-the-drawdefaultinspector-function)
+
+
 
 
 ## INTERMEDIATE GAMEPLAY SCRIPTING
@@ -102,3 +105,16 @@ In this video you will learn about the benefits of custom inspectors as well as 
 * Scripts must import `using UnityEditor;` namespace.
 * Class definition must have attribute `[CustomEditor(typeof(YourScript))]`.
 * Scripts must implement `public override void OnInspectorGUI()` which is called everytime the Inspector is drawn.
+
+
+
+#### 02. The DrawDefaultInspector Function
+
+The DrawDefaultInspector function allows us to easily recreate the default inspector for a script inside a custom inspector. This is very useful if we only want to add new items to the inspector for a script instead of changing the currently existing items.
+In this video you will learn how to use the DrawDefaultInspector function.
+
+[Unity](https://unity3d.com/learn/tutorials/modules/intermediate/editor/drawdefaultinspector-function?playlist=17117) / 
+[Youtube](https://www.youtube.com/watch?v=jvczWAPryUg)
+
+##### Notes:
+* Useful for only adding new items to the default Inspector view of a script.
