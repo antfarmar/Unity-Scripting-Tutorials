@@ -16,7 +16,7 @@ _Implementations of select Unity Scripting Tutorials, complete with basic Scenes
 
 - 01. [Building A Custom Inspector](#01-building-a-custom-inspector)
 - 02. [The DrawDefaultInspector Function](#02-the-drawdefaultinspector-function)
-
+- 03. [Adding Buttons To A Custom Inspector](#03-adding-buttons-to-a-custom-inspector)
 
 
 
@@ -118,3 +118,17 @@ In this video you will learn how to use the DrawDefaultInspector function.
 
 ##### Notes:
 * Useful for only adding new items to the default Inspector view of a script.
+
+
+
+#### 03. Adding Buttons To A Custom Inspector
+
+In Unity we can add buttons to editor windows so that we can call our functions from our scripts.
+Doing so give us the ability to write scripts specifically to improve our workflow.
+In this video you will learn how to create buttons in a custom inspector and how to tie them to functions that exist in our scripts.
+
+[Unity](https://unity3d.com/learn/tutorials/modules/intermediate/editor/adding-buttons-to-inspector?playlist=17117) / 
+[Youtube](https://www.youtube.com/watch?v=_fNgn3Arpoog)
+
+##### Notes:
+* Useful for improving workflow by automating tedious tasks with a single click of a button.
