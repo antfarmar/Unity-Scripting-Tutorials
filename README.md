@@ -173,7 +173,7 @@ UnityEvents are a way of allowing user driven callback to be persisted from edit
 [Scripting API Entry for `UnityEvent`](http://docs.unity3d.com/ScriptReference/Events.UnityEvent.html)
 
 ##### Notes:
-* UnityEvents are a way to hook up function calls between GameObjects in the editor and serialize those calls.
+* UnityEvents are a way to hook up function calls between GameObjects.
 * UnityEvents can be edited in the Inspector, serialized, and be given default values.
 * The `UnityEvent` class within `UnityEngine.Events` is the way of exposing callbacks on an object in a way that can be modified through the editor.
 * UnityEvents can also do what C# `delegate events` do:
@@ -187,7 +187,7 @@ UnityEvents are a way of allowing user driven callback to be persisted from edit
 
 #### Generic UnityEvents
 
-* By default a UnityEvent in a Monobehaviour binds dynamically to a void function.
+* By default a `UnityEvent` in a `MonoBehaviour` binds dynamically to a `void` function.
 * Dynamic invocation of UnityEvents supports binding to functions with up to 4 arguments.
 * To do this you need to define a custom UnityEvent class that supports multiple arguments.
 * This is quite easy to do:
@@ -195,6 +195,6 @@ UnityEvents are a way of allowing user driven callback to be persisted from edit
 [Serializable]
 public class StringEvent : UnityEvent <string> {}
 ```
-* By adding an instance of this to your class instead of the base UnityEvent it will allow the callback to bind dynamically to string functions.
-* This can then be invoked by calling the Invoke() function with a string as argument.
+* By adding an instance of this to your class instead of the base `UnityEvent` it will allow the callback to bind dynamically to string functions.
+* This can then be invoked by calling the `Invoke()` function with a string as argument.
 * UnityEvents can be defined with up to 4 arguments in their generic definition.
